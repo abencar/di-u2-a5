@@ -1,12 +1,15 @@
+import styles from "./styles.css";
+
 export default function Clock({ time }) {
     let hours = time.getHours();
+    let estilo;
     if (hours >= 0 && hours <= 6) {
-      document.getElementById('time').className = 'night';
+      estilo = 'night';
     } else {
-      document.getElementById('time').className = 'day';
+      estilo = 'day';
     }
     return (
-      <h1 id="time">
+      <h1 id="time" className={estilo}>
         {time.toLocaleTimeString()}
       </h1>
     );

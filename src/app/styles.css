@@ -62,3 +62,12 @@
     height: 100px;
   }
   
+  .night {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .day {
+    background-color: #ffffff;
+    color: #333;
+  }
